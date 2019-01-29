@@ -1,0 +1,24 @@
+modulos
+	django
+	pylint
+	pylint-django
+modificar en preference->settings->pylintArgs
+	"python.linting.pylintArgs": [
+	        "--error-only",
+	        "--load-plugins",
+        	"pylint_django"
+		    ]
+
+comandos django
+iniciar proyecto: django-admin startproject proyecto
+iniciar servidor: python manage.py runserver
+sincronizar bd: python manage.py migrate
+crear app: python manage.py startapp core
+
+cuando crees un nuevo modelo: 
+	python manage.py makemigrations 'portfolio'
+	python manage.py migrate 'portfolio'
+
+crear usuario supersu
+	python manage.py createsuperuser
+
